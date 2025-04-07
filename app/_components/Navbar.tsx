@@ -6,7 +6,7 @@ const navLinks: NavLink[] = [
   { title: "Home", link: "#home" },
   { title: "About Me", link: "#about-me" },
   { title: "Client Projects", link: "#client-projects" },
-  { title: "Self Made Projects", link: "#self-made-projects" },
+  { title: "Self Projects", link: "#self-projects" },
   { title: "Contact", link: "#contact" },
 ];
 

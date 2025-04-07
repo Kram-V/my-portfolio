@@ -26,19 +26,19 @@ const HeroSection = () => {
             <TypeAnimation
               className="text-3xl font-bold text-gray-500"
               sequence={[
-                "I love being developer",
+                "I love being developer 💖",
                 1000,
-                "Technologies explorer",
+                "Technologies explorer 🖥️",
                 1000,
-                "Always learning new things",
+                "Always learning new things 📗",
                 1000,
-                "Building with code",
+                "Building with code 💻",
                 1000,
-                "Solving problems",
+                "Solving problems 🕵️",
                 1000,
-                "Shaping the future",
+                "Shaping the future 🌍",
                 1000,
-                "Learning AI... Soon!",
+                "Learning AI... Soon! 🤖",
                 1000,
               ]}
               speed={65}
