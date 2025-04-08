@@ -7,3 +7,10 @@ export type Image = {
   src: string;
   alt: string;
 };
+
+export type Project = {
+  image: Image;
+  demoLiveLink: string;
+  srcCodeLink: string;
+  techStacks: string[];
+};

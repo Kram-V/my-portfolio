@@ -1,4 +1,7 @@
+import { projects } from "@/data/my-projects";
 import React from "react";
+import Button from "./global/Button";
+import Tag from "./global/Tag";
 
 const MyProjects = () => {
   return (
@@ -9,65 +12,40 @@ const MyProjects = () => {
         </h2>
 
         <div className="grid grid-cols-3 gap-10 justify-items-center">
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/guess-number.png"
-            alt="Guess Number"
-          />
+          {projects.map((project, i) => (
+            <div key={i} className="card">
+              <div className="card-inner">
+                <div className="card-front">
+                  <img
+                    key={i}
+                    className="box-shadow rounded-xl"
+                    src={project.image.src}
+                    alt={project.image.alt}
+                  />
+                </div>
 
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/travel-list.png"
-            alt="Travel List"
-          />
+                <div className="card-back rounded-xl box-shadow bg-black text-white flex flex-col gap-10 justify-center items-center">
+                  <div className="flex items-center gap-2">
+                    <Button btnSize="md" link={project.demoLiveLink}>
+                      Demo Live
+                    </Button>
 
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/cine-rater.png"
-            alt="Cine Rater"
-          />
+                    <Button btnSize="md" link={project.srcCodeLink}>
+                      Code
+                    </Button>
+                  </div>
 
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/javascript-quiz.png"
-            alt="Javascript Quiz"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/pig-game.png"
-            alt="Pig Game"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/cabin-booking-management.png"
-            alt="Cabin Booking Management"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/cabin-vista.png"
-            alt="Cabin Vista"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/task-app.png"
-            alt="Task App"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/diary-app.png"
-            alt="Diary App"
-          />
-
-          <img
-            className="box-shadow rounded-md"
-            src="/projects/spotify.png"
-            alt="Spotify"
-          />
+                  <div className="flex flex-wrap justify-center gap-3">
+                    {project.techStacks.map((tech, i) => (
+                      <Tag size="md" key={i}>
+                        {tech}
+                      </Tag>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
