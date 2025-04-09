@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Button from "./global/Button";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -11,23 +12,35 @@ interface FormData {
 }
 
 const Contact = () => {
+  const form = useRef<any>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [mounted, setMounted] = useState<boolean>(false);
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmitEmail = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
 
-    console.log(formData);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_TEMPLATE_ID || "",
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY || "",
+        }
+      )
+      .then(
+        () => {
+          alert("Email Sent Successfully");
+          setIsLoading(false);
+          form.current?.reset();
+        },
+        (error) => {
+          alert("Email Failed Sending");
+          setIsLoading(false);
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   useEffect(() => {
@@ -137,11 +150,15 @@ const Contact = () => {
 
           <div>
             <div className="box-shadow rounded-lg p-6">
-              <h4 className="text-[30px] uppercase font-medium text-center ">
+              <h4 className="text-[30px] uppercase font-medium text-center mb-4">
                 Get In Touch
               </h4>
 
-              <form className="space-y-4" onSubmit={handleSubmit}>
+              <form
+                ref={form}
+                className="space-y-4"
+                onSubmit={handleSubmitEmail}
+              >
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium">
                     Name
@@ -150,8 +167,6 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md p-2"
                     required
                   />
@@ -165,8 +180,6 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md p-2"
                     required
                   />
@@ -183,14 +196,14 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md p-2"
                     required
                   ></textarea>
                 </div>
 
-                <Button btnWidth="w-full">Submit</Button>
+                <Button disabled={isLoading} btnWidth="w-full">
+                  Submit
+                </Button>
               </form>
             </div>
           </div>
