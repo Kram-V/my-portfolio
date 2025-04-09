@@ -8,6 +8,13 @@ import Button from "./global/Button";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume/resume-mark-anthony-vivar.docx";
+    link.download = "resume-mark-anthony-vivar.docx";
+    link.click();
+  };
+
   return (
     <div className="h-[750px]">
       <div className="w-[1250px] h-full mx-auto py-4 grid grid-cols-2 justify-items-center items-center">
@@ -65,7 +72,9 @@ const HeroSection = () => {
               </li>
             </ul>
 
-            <Button btnWidth="w-[200px]">Upload Resume</Button>
+            <Button onClick={handleDownloadResume} btnWidth="w-[200px]">
+              Upload Resume
+            </Button>
           </div>
         </div>
       </div>

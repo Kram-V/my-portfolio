@@ -7,7 +7,7 @@ import Tag from "./global/Tag";
 
 const ClientProjects = () => {
   return (
-    <div className="bg-gray-100">
+    <div>
       <div className="w-[1250px] mx-auto py-20">
         <h2 className="text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[330px]  text-center uppercase">
           Client Projects

@@ -5,7 +5,7 @@ import Tag from "./global/Tag";
 
 const MyProjects = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <div className="w-[1250px] mx-auto py-20">
         <h2 className="text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[272px]  text-center uppercase">
           My Projects
@@ -24,7 +24,7 @@ const MyProjects = () => {
                   />
                 </div>
 
-                <div className="card-back rounded-xl box-shadow bg-black text-white flex flex-col gap-10 justify-center items-center">
+                <div className="card-back rounded-xl box-shadow bg-black text-white flex flex-col gap-6 justify-center items-center">
                   <div className="flex items-center gap-2">
                     <Button btnSize="md" link={project.demoLiveLink}>
                       Demo Live
