@@ -5,12 +5,12 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div>
-      <div className="w-[1250px] mx-auto py-20">
-        <h2 className="text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[200px]  text-center uppercase">
+      <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] mx-auto py-20">
+        <h2 className="text-3xl md:text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[180px] md:w-[200px] text-center uppercase">
           Contact
         </h2>
 
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="flex flex-col gap-4">
             <p className="text-xl font-medium mb-4">
               Feel free to reach out! You can send me a message or follow me on

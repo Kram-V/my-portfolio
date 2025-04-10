@@ -3,16 +3,16 @@ import React from "react";
 const Experience = () => {
   return (
     <div className="bg-gray-100">
-      <div className="w-[1250px] mx-auto py-20">
-        <h2 className="text-4xl font-medium mb-14 border-l-6 border-l-blue-600 w-[355px]  text-center uppercase">
+      <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] mx-auto py-20">
+        <h2 className="text-3xl md:text-4xl font-medium mb-14 border-l-6 border-l-blue-600 w-[315px] md:w-[355px]  text-center uppercase">
           Work Experience
         </h2>
 
         <div className="flex flex-col gap-10">
-          <div className="w-[700px] mx-auto">
-            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 px-10 relative">
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
-                className="absolute -left-[32px] top-0 w-[60px]"
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/hmr-philippines.png"
                 alt="HMR Philippines"
               />
@@ -25,7 +25,7 @@ const Experience = () => {
                 </span>
               </div>
 
-              <p>
+              <p className="w-full">
                 I was responsible for developing and maintaining UI components,
                 collaborating with the designer and frontend lead, implementing
                 logic and functionality, writing and optimizing frontend code,
@@ -37,10 +37,10 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="w-[700px] mx-auto">
-            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 px-10 relative">
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
-                className="absolute -left-[32px] top-0 w-[60px]"
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/rigfab.jpeg"
                 alt="Rigfab"
               />
@@ -63,10 +63,10 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="w-[700px] mx-auto">
-            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 px-10 relative">
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
-                className="absolute -left-[32px] top-0 w-[60px]"
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/cloud-panda.png"
                 alt="Cloud Panda PH"
               />
@@ -91,10 +91,10 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="w-[700px] mx-auto">
-            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 px-10 relative">
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
-                className="absolute -left-[32px] top-0 w-[60px]"
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/busybee.jpeg"
                 alt="My Busybee Inc"
               />

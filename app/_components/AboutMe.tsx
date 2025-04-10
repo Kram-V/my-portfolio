@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <div className="w-[1250px] mx-auto py-20">
-          <h2 className="text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[220px]  text-center uppercase">
+        <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] mx-auto py-20">
+          <h2 className="text-3xl md:text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[200px] md:w-[220px]  text-center uppercase">
             About Me
           </h2>
 
@@ -19,13 +19,13 @@ const AboutMe = () => {
       </div>
 
       <div>
-        <div className="w-[1250px] mx-auto py-20 grid grid-cols-2 gap-16">
+        <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] mx-auto py-20 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-3xl font-medium mb-10 uppercase">
+            <h3 className="text-2xl md:text-3xl font-medium mb-10 uppercase">
               Skills and Technologies
             </h3>
 
-            <div className="grid grid-cols-5 gap-10">
+            <div className="grid grid-cols-4 sm:grid-cols-5 gap-10">
               {images.map((image, i) => (
                 <img
                   key={i}
@@ -38,11 +38,11 @@ const AboutMe = () => {
           </div>
 
           <div>
-            <h3 className="text-3xl font-medium mb-10 uppercase">
+            <h3 className="text-2xl md:text-3xl font-medium mb-10 uppercase">
               Knowledgeable In
             </h3>
 
-            <div className="grid grid-cols-3 gap-4 mb-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center mb-10">
               {experts.map((expert, i) => (
                 <div
                   key={i}

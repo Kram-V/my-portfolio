@@ -17,21 +17,25 @@ const HeroSection = () => {
 
   return (
     <div className="h-[750px]">
-      <div className="w-[1250px] h-full mx-auto py-4 grid grid-cols-2 justify-items-center items-center">
+      <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] h-full mx-auto py-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 justify-items-center items-center">
         <div>
           <img
+            className="w-[350px] lg:w-full"
             src="https://tse1.mm.bing.net/th?id=OIP.NJ3WnhZV4aRpAqK5COWlMAHaHa&pid=Api&P=0"
             alt="Mark Anthony Vivar"
           />
         </div>
 
-        <div className="flex flex-col gap-6">
-          <p className="text-3xl font-bold text-gray-500">Hi There 👋, I'm</p>
-          <h1 className="text-5xl font-bold">Mark Anthony Vivar</h1>
+        <div className="flex flex-col gap-6 text-center lg:text-left pb-6 lg:pb-0">
+          <p className="text-2xl md:text-3xl font-bold text-gray-500">
+            Hi There 👋, I'm
+          </p>
+
+          <h1 className="text-4xl md:text-5xl font-bold">Mark Anthony Vivar</h1>
 
           <div className="flex flex-col gap-2">
             <TypeAnimation
-              className="text-3xl font-bold text-gray-500"
+              className="text-2xl md:text-3xl font-bold text-gray-500"
               sequence={[
                 "I love being developer 💖",
                 1000,
@@ -54,7 +58,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
 
-            <ul className="flex gap-2 mb-2">
+            <ul className="flex justify-center lg:justify-start gap-2 mb-2">
               <li>
                 <a href="#">
                   <FaFacebook className="text-[28px] transition duration-300 hover:text-blue-600" />
@@ -72,9 +76,11 @@ const HeroSection = () => {
               </li>
             </ul>
 
-            <Button onClick={handleDownloadResume} btnWidth="w-[200px]">
-              Upload Resume
-            </Button>
+            <div>
+              <Button onClick={handleDownloadResume} btnWidth="w-[200px]">
+                Upload Resume
+              </Button>
+            </div>
           </div>
         </div>
       </div>
