@@ -21,7 +21,7 @@ const Experience = () => {
               />
 
               <div className="flex flex-col">
-                <h5 className="font-semibold">HMR Philippines</h5>
+                <h5 className="font-bold">HMR Philippines</h5>
                 <span>Junior Frontend Developer</span>
                 <span className="text-gray-400">
                   January 2023 - December 2024
