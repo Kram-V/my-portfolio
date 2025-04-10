@@ -49,7 +49,7 @@ const Experience = () => {
               />
 
               <div className="flex flex-col">
-                <h5 className="font-medium">Rigfab (Freelance US Based)</h5>
+                <h5 className="font-bold">Rigfab (Freelance US Based)</h5>
                 <span>Frontend/Next Js Developer</span>
                 <span className="text-gray-400">July 2024 - November 2024</span>
               </div>
@@ -75,7 +75,7 @@ const Experience = () => {
               />
 
               <div className="flex flex-col">
-                <h5 className="font-medium">Cloud Panda PH</h5>
+                <h5 className="font-bold">Cloud Panda PH</h5>
                 <span>Software Engineer I</span>
                 <span className="text-gray-400">April 2022 - August 2022</span>
               </div>
@@ -103,7 +103,7 @@ const Experience = () => {
               />
 
               <div className="flex flex-col">
-                <h5 className="font-medium">My Busybee Inc</h5>
+                <h5 className="font-bold">My Busybee Inc</h5>
                 <span>Backend Developer</span>
                 <span className="text-gray-400">
                   September 2021 - December 2021
