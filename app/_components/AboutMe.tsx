@@ -4,7 +4,10 @@ import { descriptions, experts, images } from "@/data/about-me";
 const AboutMe = () => {
   return (
     <>
-      <div className="bg-gray-100">
+      <div
+        className="bg-gray-100 scroll-mt-[40px] lg:scroll-mt-[70px]"
+        id="about-me"
+      >
         <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] mx-auto py-20">
           <h2 className="text-3xl md:text-4xl font-medium mb-10 border-l-6 border-l-blue-600 w-[200px] md:w-[220px]  text-center uppercase">
             About Me
