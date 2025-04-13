@@ -81,4 +81,15 @@ export const projects: Project[] = [
     srcCodeLink: "https://github.com/Kram-V/diary-app",
     techStacks: ["Native PHP", "Javascript", "MySQL"],
   },
+  {
+    image: { src: "/projects/blog-post.png", alt: "Blog Post" },
+    demoLiveLink: "https://blog-post.infinityfreeapp.com/",
+    srcCodeLink: "https://github.com/Kram-V/blog-post-oop",
+    techStacks: [
+      "Native PHP",
+      "SQLite",
+      "Tailwind CSS",
+      "OOP (Laravel Like Structure)",
+    ],
+  },
 ];
