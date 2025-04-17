@@ -1,4 +1,4 @@
-import { Image, Project } from "@/app/types";
+import { Project } from "@/app/types";
 
 export const projects: Project[] = [
   {
@@ -90,6 +90,35 @@ export const projects: Project[] = [
       "SQLite",
       "Tailwind CSS",
       "OOP (Laravel Like Structure)",
+    ],
+  },
+  {
+    image: { src: "/projects/escape-ease.png", alt: "EscapeEase" },
+    demoLiveLink: "#",
+    srcCodeLink: "https://github.com/Kram-V/travel-agency",
+    techStacks: [
+      "PHP",
+      "Laravel",
+      "MVC Architecture",
+      "Javascript/Jquery",
+      "Bootstrap",
+      "MySQL",
+    ],
+  },
+  {
+    image: {
+      src: "/projects/admin-panel-escape-ease.png",
+      alt: "EscapeEase Admin Panel",
+    },
+    demoLiveLink: "#",
+    srcCodeLink: "https://github.com/Kram-V/travel-agency",
+    techStacks: [
+      "PHP",
+      "Laravel",
+      "MVC Architecture",
+      "Javascript/Jquery",
+      "Bootstrap",
+      "MySQL",
     ],
   },
 ];
