@@ -124,9 +124,10 @@ export const images: Image[] = [
 ];
 
 export const experts: string[] = [
-  "Frontend",
-  "Backend",
-  "Fullstack",
+  "Frontend Development",
+  "Backend Development",
+  "Fullstack Development",
+  "Mobile Development",
   "Relational Database",
   "Basic AWS",
   "API Integration",
