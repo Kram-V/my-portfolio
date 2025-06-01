@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { NavLink } from "../types";
+import { usePathname } from "next/navigation";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -15,6 +16,7 @@ const navLinks: NavLink[] = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isSidebarNotActive, setIsSidebarNotActive] = useState<boolean>(true);
 
   const handleCloseSidebarMenu = () => {
@@ -24,6 +26,9 @@ const Navbar = () => {
   const handleOpenSidebarMenu = () => {
     setIsSidebarNotActive(false);
   };
+
+  if (pathname === "/not-yet-deployed" || pathname === "/app-confidential")
+    return;
 
   return (
     <>

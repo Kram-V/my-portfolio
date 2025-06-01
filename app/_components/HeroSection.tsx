@@ -20,8 +20,8 @@ const HeroSection = () => {
       <div className="w-[90%] xl:w-[1050px] 2xl:w-[1250px] h-full mx-auto py-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 justify-items-center items-center">
         <div>
           <img
-            className="w-[350px] lg:w-full"
-            src="https://tse1.mm.bing.net/th?id=OIP.NJ3WnhZV4aRpAqK5COWlMAHaHa&pid=Api&P=0"
+            className="w-[320px] lg:w-[450px] rounded-full"
+            src="/my-pic/mark-anthony-vivar.jpg"
             alt="Mark Anthony Vivar"
           />
         </div>

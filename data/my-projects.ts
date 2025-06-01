@@ -94,7 +94,7 @@ export const projects: Project[] = [
   },
   {
     image: { src: "/projects/escape-ease.png", alt: "EscapeEase" },
-    demoLiveLink: "#",
+    demoLiveLink: "/not-yet-deployed",
     srcCodeLink: "https://github.com/Kram-V/travel-agency",
     techStacks: [
       "PHP",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
       src: "/projects/admin-panel-escape-ease.png",
       alt: "EscapeEase Admin Panel",
     },
-    demoLiveLink: "#",
+    demoLiveLink: "/not-yet-deployed",
     srcCodeLink: "https://github.com/Kram-V/travel-agency",
     techStacks: [
       "PHP",
