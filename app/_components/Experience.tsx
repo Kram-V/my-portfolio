@@ -21,11 +21,9 @@ const Experience = () => {
               />
 
               <div className="flex flex-col">
-                <h5 className="font-bold">HMR Philippines</h5>
-                <span>Junior Frontend Developer</span>
-                <span className="text-gray-400">
-                  January 2023 - December 2024
-                </span>
+                <h5 className="font-bold">Great Deals E-commerce Corp.</h5>
+                <span>Fullstack Engineer</span>
+                <span className="text-gray-400">June 2025 - Current</span>
               </div>
 
               <p className="w-full">
@@ -70,6 +68,34 @@ const Experience = () => {
             <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
                 className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
+                src="/experience/hmr-philippines.png"
+                alt="HMR Philippines"
+              />
+
+              <div className="flex flex-col">
+                <h5 className="font-bold">HMR Philippines</h5>
+                <span>Junior Frontend Developer</span>
+                <span className="text-gray-400">
+                  January 2023 - December 2024
+                </span>
+              </div>
+
+              <p className="w-full">
+                I was responsible for developing and maintaining UI components,
+                collaborating with the designer and frontend lead, implementing
+                logic and functionality, writing and optimizing frontend code,
+                fixing bugs mainly in the CMS ensuring cross-browser
+                compatibility, contributing to responsive design, participating
+                in code reviews, learning new tools, integrating APIs, and
+                revamping the system for better performance and user experience.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
+              <img
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/cloud-panda.png"
                 alt="Cloud Panda PH"
               />
@@ -94,7 +120,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="w-[90%] lg:w-[700px] mx-auto">
+          {/* <div className="w-[90%] lg:w-[700px] mx-auto">
             <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
                 className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
@@ -123,7 +149,7 @@ const Experience = () => {
                 respectful and helpful attitude throughout the process.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

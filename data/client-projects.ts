@@ -2,27 +2,6 @@ import { Project } from "@/app/types";
 
 export const projects: Project[] = [
   {
-    image: {
-      src: "/projects/management-report-system.png",
-      alt: "Report Management System",
-    },
-    demoLiveLink: "/app-confidential",
-    srcCodeLink: "#",
-    techStacks: [
-      "React JS",
-      "Redux Toolkit",
-      "React Hook Form",
-      "Laravel",
-      "MySQL",
-    ],
-  },
-  {
-    image: { src: "/projects/osd-event-cam.png", alt: "OSD Event Cam" },
-    demoLiveLink: "/app-confidential",
-    srcCodeLink: "#",
-    techStacks: ["React Native", "Laravel", "MySQL"],
-  },
-  {
     image: { src: "/projects/flameguard.png", alt: "Flameguard" },
     demoLiveLink: "https://flameguardph.com/",
     srcCodeLink: "#",
@@ -36,7 +15,7 @@ export const projects: Project[] = [
   },
   {
     image: { src: "/projects/heroes-connect.png", alt: "Heroes Connect" },
-    demoLiveLink: "https://heroesconnect.site/login",
+    demoLiveLink: "/app-confidential",
     srcCodeLink: "#",
     techStacks: [
       "React JS",
