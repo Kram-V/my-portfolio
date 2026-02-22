@@ -1,5 +1,4 @@
 import { projects } from "@/data/my-projects";
-import React from "react";
 import Button from "./global/Button";
 import Tag from "./global/Tag";
 

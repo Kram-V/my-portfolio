@@ -77,13 +77,13 @@ export const projects: Project[] = [
 
   {
     image: { src: "/projects/diary-app.png", alt: "Diary App" },
-    demoLiveLink: "https://diary-app.infinityfreeapp.com/",
+    demoLiveLink: "/not-yet-deployed",
     srcCodeLink: "https://github.com/Kram-V/diary-app",
     techStacks: ["Native PHP", "Javascript", "MySQL"],
   },
   {
     image: { src: "/projects/blog-post.png", alt: "Blog Post" },
-    demoLiveLink: "https://blog-post.infinityfreeapp.com/",
+    demoLiveLink: "/not-yet-deployed",
     srcCodeLink: "https://github.com/Kram-V/blog-post-oop",
     techStacks: [
       "Native PHP",
