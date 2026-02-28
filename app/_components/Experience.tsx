@@ -43,32 +43,6 @@ const Experience = () => {
             <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
                 className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
-                src="/experience/rigfab.jpeg"
-                alt="Rigfab"
-              />
-
-              <div className="flex flex-col">
-                <h5 className="font-bold">Rigfab (Freelance US Based)</h5>
-                <span>Frontend/Next Js Developer</span>
-                <span className="text-gray-400">July 2024 - November 2024</span>
-              </div>
-
-              <p>
-                I was involved in revamping the system, developing UI
-                components, integrating APIs, and collaborating closely with our
-                team especially backend developers to implement frontend logic
-                and functionality. My role also included writing and maintaining
-                frontend code, participating in code reviews, fixing performance
-                issues, and creating responsive layouts for a smooth user
-                experience.
-              </p>
-            </div>
-          </div>
-
-          <div className="w-[90%] lg:w-[700px] mx-auto">
-            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
-              <img
-                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
                 src="/experience/hmr-philippines.png"
                 alt="HMR Philippines"
               />
@@ -89,6 +63,32 @@ const Experience = () => {
                 compatibility, contributing to responsive design, participating
                 in code reviews, learning new tools, integrating APIs, and
                 revamping the system for better performance and user experience.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[90%] lg:w-[700px] mx-auto">
+            <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
+              <img
+                className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
+                src="/experience/rigfab.jpeg"
+                alt="Rigfab"
+              />
+
+              <div className="flex flex-col">
+                <h5 className="font-bold">Rigfab (Freelance US Based)</h5>
+                <span>Frontend/Next Js Developer</span>
+                <span className="text-gray-400">July 2024 - November 2024</span>
+              </div>
+
+              <p>
+                I was involved in revamping the system, developing UI
+                components, integrating APIs, and collaborating closely with our
+                team especially backend developers to implement frontend logic
+                and functionality. My role also included writing and maintaining
+                frontend code, participating in code reviews, fixing performance
+                issues, and creating responsive layouts for a smooth user
+                experience.
               </p>
             </div>
           </div>
