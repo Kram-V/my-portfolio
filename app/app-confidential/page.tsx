@@ -8,10 +8,6 @@ const AppConfidential = () => {
         Oooopppsss! This app is confidential!
       </h2>
 
-      <p className="text-2xl">
-        But I can demo this web app during interview locally 😊
-      </p>
-
       <Link
         href="/"
         className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"

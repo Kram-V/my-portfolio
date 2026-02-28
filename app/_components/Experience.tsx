@@ -16,8 +16,8 @@ const Experience = () => {
             <div className="flex flex-col gap-4 border-l-1 border-l-gray-300 pr-0 lg:pr-10 pl-10 relative">
               <img
                 className="absolute -left-[25px] sm:-left-[32px] top-0 w-[50px] sm:w-[60px]"
-                src="/experience/hmr-philippines.png"
-                alt="HMR Philippines"
+                src="/experience/great-deals.jpeg"
+                alt="Great Deals E-commerce Corp."
               />
 
               <div className="flex flex-col">
@@ -27,13 +27,14 @@ const Experience = () => {
               </div>
 
               <p className="w-full">
-                I was responsible for developing and maintaining UI components,
-                collaborating with the designer and frontend lead, implementing
-                logic and functionality, writing and optimizing frontend code,
-                fixing bugs mainly in the CMS ensuring cross-browser
-                compatibility, contributing to responsive design, participating
-                in code reviews, learning new tools, integrating APIs, and
-                revamping the system for better performance and user experience.
+                Designed and developed a data-driven analytics system powered by
+                Snowflake and AWS Serverless architecture. Implemented secure
+                API layers (Node.js + Lambda), Cognito-based authentication, and
+                React-based dashboards with dynamic date filtering and KPI
+                comparisons. Optimized Snowflake queries for large datasets and
+                resolved cold-start and performance issues in AWS Lambda.
+                Managed multi-environment deployments (staging/prod) and
+                brand-specific analytics stacks.
               </p>
             </div>
           </div>

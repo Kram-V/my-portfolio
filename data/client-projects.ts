@@ -9,7 +9,7 @@ export const projects: Project[] = [
   },
   {
     image: { src: "/projects/flameguard-cms.png", alt: "Flameguard CMS" },
-    demoLiveLink: "/app-confidential",
+    demoLiveLink: "https://flameguardcms.com/login",
     srcCodeLink: "#",
     techStacks: ["Laravel", "MySQL", "Vue 3", "Tailwind CSS"],
   },
