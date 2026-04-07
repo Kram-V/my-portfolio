@@ -23,7 +23,7 @@ const Experience = () => {
               <div className="flex flex-col">
                 <h5 className="font-bold">Great Deals E-commerce Corp.</h5>
                 <span>Fullstack Engineer</span>
-                <span className="text-gray-400">June 2025 - Current</span>
+                <span className="text-gray-400">June 2025 - April 2026</span>
               </div>
 
               <p className="w-full">
@@ -33,8 +33,12 @@ const Experience = () => {
                 React-based dashboards with dynamic date filtering and KPI
                 comparisons. Optimized Snowflake queries for large datasets and
                 resolved cold-start and performance issues in AWS Lambda.
-                Managed multi-environment deployments (staging/prod) and
-                brand-specific analytics stacks.
+                Managed multi-environment deployments and brand-specific
+                analytics stacks. Additionally, developed an AI-powered
+                analytics chatbot using OpenAI, LangChain, and Snowflake to
+                translate user queries into SQL and generate insights,
+                integrated via a serverless backend (AWS Lambda, Python) into
+                the React dashboard for real-time data analytics.
               </p>
             </div>
           </div>
